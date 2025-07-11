@@ -1,0 +1,521 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+}
+
+/*-----navbar----------*/
+.encabezado-header{
+    background-color: brown;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 65px;
+    min-height: 55px!important;
+    padding: 5px 10%;
+    box-sizing: border-box;
+}
+
+.encabezado-div-logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.encabezado-img-logo{
+    height: 70px;
+    width: auto;
+    border-radius: 0px;
+    transition: all 0.2s;
+}
+
+.encabezado-img-logo:hover{
+    transform: scale(1.3);
+}
+
+.encabezado-li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.3s;
+}
+
+.encabezado-li:hover{
+    transform: scale(1.1);
+}
+
+.encabezado-ul{
+    list-style: none;
+}
+
+.encabezado-a{
+    text-decoration: none;
+    font-size: 700;
+    color:#ECF0F1;
+}
+
+.encabezado-a:hover{
+    color: white;
+    text-shadow: 1px 1px 10px white;
+}
+
+.encabezado-button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #E9ECEF;
+    padding: 9px 25px;
+    background: black;
+    border-radius: 50px;
+    cursor:pointer;
+    border: none;
+    transition: all 0.3s;
+}
+
+.encabezado-button:hover{
+    color: #ECF0F1;
+    transform: scale(1.1);
+    text-shadow: 1px 1px 10px white;
+}
+
+/* ------------------------ INDEX --------------- */
+#envolvedor{
+    position: relative;
+    width:auto;
+    height: auto;
+}
+
+.contenido{
+    position: relative;
+    z-index: 100;
+}
+
+.index-fondo{
+    position: fixed;
+    z-index: -100;
+}
+
+@keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1692px, 0, 0); /* The image width */
+    }
+}
+
+.backg-container{
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+}
+
+.backg-infinito{
+    background: url("../img/backg.jpg") repeat-x;
+    height: 560px;
+    width: 5076px;
+    animation: slide 60s linear infinite;
+}
+
+.index-body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+}
+
+.index-div-sesion{
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 12%;
+    height: 43%;
+    width: 24%;
+    min-height: 300px;
+    padding: 2%;
+    gap: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 7px;
+    background-color: white; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+.index-h1{
+    margin: 0;
+    margin-top: 4%;
+    color: #212529;
+}
+
+.index-input{
+    width: 100%;
+    height: 30%;
+    padding: 4%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    border: 2.5px solid transparent;
+    color:  #212529;;
+}
+
+.index-input:focus{
+    border: 2.5px solid lightseagreen;
+}
+
+.index-input:hover{
+    border: 2.5px solid lightseagreen;
+}
+
+.index-input-submit{
+    width: 80%;
+    height: 28%;
+    margin-top: 10%;
+    padding: 1%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: brown;
+    color: white;
+    border: 2.5px solid transparent;
+}
+
+.index-input-submit:hover{
+    text-shadow: 0 0 10px white;
+}
+
+.index-input-submit:focus{
+    box-shadow: 1px 3px 10px 0 #0000008f;
+}
+
+.index-label{
+    margin-right: 90%;
+    padding: 1%;
+    color: black;
+}
+
+.index-p{
+    text-align: center;
+    color: black; 
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0%;
+}
+
+.index-p-error{
+    margin: 1% auto;
+}
+
+.index-errorMsg{
+    color: red;
+    font-size: large;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.index-a{
+    color: green;
+    text-decoration: none!important
+}
+
+.index-a:hover{
+    text-shadow: 1px 1px 20px #00ff44;
+}
+
+/*---------------------------------------- REGISTROUSUARIO.PHP"----------------------------------------*/
+.registro-body{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.registro-div-formulario{
+    height: 65%;
+    min-height: 380px;
+    width: 40%;
+    margin: auto auto;
+    margin-bottom: 10px;
+    padding: 2%;
+    gap: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 7px;
+    background-color: white; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+.registro-div-nombre-apellido-flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+    gap: 3%;
+    margin-bottom: 3%;
+}
+
+.registro-h1{
+    margin: 0;
+    margin-top: 0%;
+    color: black;
+}
+
+.registro-input{
+    width: 100%;
+    height: 18%;
+    padding: 2%;
+    margin-bottom: 3%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    border: 2.5px solid transparent;
+    color: gray;
+}
+
+.registro-input-nombre, .registro-input-apellido{
+    width: 50%;
+    height: 100%;
+    padding: 2%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    border: 2.5px solid transparent;
+    color: gray;
+}
+.registro-label-fch{
+    width: 40%;
+    height: 100%;
+    padding: 2%;
+    font-size: small;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    border: 2.5px solid transparent;
+    color: gray;
+}
+.registro-input-fch{
+    width: 60%;
+    height: 100%;
+    padding: 2%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    border: 2.5px solid transparent;
+    color: gray;
+}
+
+.contraseña{
+    margin-bottom: 4%;
+}
+
+.registro-input-submit{
+    width: 60%;
+    height: 18%;
+    margin-top: 1%;
+    padding: 2%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: brown;
+    color: white; 
+    border: 2.5px solid transparent;
+}
+
+.registro-p{
+    margin: auto;
+    color: black;
+    margin-top: 5%;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.registro-a{
+    color: green;
+    text-decoration: none;
+}
+
+.registro-a:hover{
+    text-shadow: 1px 1px 20px #00ff44;
+}
+
+.registro-input-apellido:focus, .registro-input-nombre:focus, .registro-input:focus{
+    border: 2.5px solid #1A5276!important;
+}
+
+.registro-input-apellido:hover, .registro-input-nombre:hover, .registro-input:hover{
+    border: 2.5px solid #1a53766e;
+}
+
+.registro-input-submit:hover{
+    text-shadow: 0 0 5px white;
+}
+
+.registro-input-submit:focus{
+    box-shadow: 1px 3px 10px 0 #0000008f;
+}
+
+/*---------------------------------------ESTA PARTE ES EL ESTILO DE LA PAGINA FORMULARIO_IMPRESORA.PHP-------------------------------------------*/
+.formulario_impresora-body{
+    background-color:var(--color-gris-claro)!important;
+}
+
+.formulario_impresora-h1{
+    color: var(--color-grafito)!important;
+}
+
+.formulario_impresora-h2{
+    color: var(--color-grafito)!important;
+}
+
+.formulario_impresora-label{
+    color: var(--color-grafito)!important;
+}
+
+.formulario_impresora-input{
+    background-color: var(--color-gris-claro)!important;
+}
+
+.formulario_impresora-input:hover{
+    outline: 2px solid var(--color-azul-medianoche-hover);
+}
+
+.formulario_impresora-button-limpiar{
+    background-color: #ffffff36;
+    color: rgb(0, 0, 0)!important;
+    transition: all 0.3s;
+}
+
+.formulario_impresora-button-limpiar:hover{
+    background-color: #1A5276!important;
+    color: rgb(255, 255, 255)!important;
+    text-shadow: 0 0 10px white;
+}
+
+.formulario_impresora-button-registrar{
+    background-color: var(--color-azul-medianoche)!important;
+    transition: all 0.3s;
+}
+
+.formulario_impresora-button-registrar:hover{
+    text-shadow: 0 0 10px white;
+}
+
+.formulario_impresora-button-registrar:focus{
+    box-shadow: 1px 3px 10px 0 #000000;
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
+
+.form-container {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*---------------------------------------ESTA PARTE ES EL ESTILO DE LA PAGINA REGISTRAR_IMPRESION.PHP-------------------------------------------*/
+.registrar_impresion-body{
+    font-family: 'Segoe UI', sans-serif; background: var(--color-gris-claro);
+}
+
+.registrar_impresion-div{
+    margin: auto auto;
+    margin-top: 5%;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25);
+    padding: 4%!important;
+}
+
+.registrar_impresora-select{
+    outline: none;
+    background-color: var(--color-gris-claro);
+}
+
+.registrar_impresora-select:hover{
+    border: 2px solid var(--color-azul-medianoche-hover);
+}
+
+.registrar_impresora-select:focus{
+    border: 2px solid var(--color-azul-medianoche)!important; 
+}
+
+.registrar_impresora-input{
+    outline: none;
+    width: 96.3%!important;
+    background-color: var(--color-gris-claro);
+}
+
+.registrar_impresora-input:hover{
+    border: 2px solid var(--color-azul-medianoche-hover);
+}
+
+.registrar_impresora-input:focus{
+    border: 2px solid var(--color-azul-medianoche)!important; 
+}
+
+/*----- PAGINA PERFIL ------*/
+
+.fondo-div-perfil{
+    padding-top: 30px;
+    width: 80%;
+    min-width: 600px;
+    background: #fff;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.perfil-img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+}
+
+.perfil-p{
+    text-align:left;
+}
+
+.perfil-nombapellidos{
+    text-align: left;
+    font-style: italic;
+    color: gray;
+}
+
+.perfil-h1{
+    text-align: left;
+}
+
+.obrasmaestras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+.item-portafolio {
+    text-align: center;
+}
+.item-portafolio img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.desc-img-portafolio {
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+}

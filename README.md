@@ -13,4 +13,8 @@ un sistema de gestión de contenido para que artistas, diseñadores, fotografos 
 - el fondo animado no quiere hacer de fondo
 - no hay verificación de sesión
 - falta estilo en el formulario de subir imagen
-- falta un chingp
+- falta un campo para mostrar precios
+- falta una forma de ver la obra en pantalla completa
+- falta una forma para personalizar el perfil
+- falta una forma de añadir audio y video
+- falta un chingo
